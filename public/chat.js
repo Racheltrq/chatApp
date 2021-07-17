@@ -8,7 +8,7 @@ const roomMessage = document.querySelector('.room-message');
 const users = document.querySelector('.users');
 
 //Socket server URL
-const socket = io.connect('https://morning-sands-95823.herokuapp.com/');
+const socket = io('https://morning-sands-95823.herokuapp.com:8000');
 
 //Fetch URL Params from URL
 const queryString = window.location.search;
