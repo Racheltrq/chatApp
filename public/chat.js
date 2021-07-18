@@ -1,4 +1,4 @@
-console.log("hi")
+
 //To get HTML elements
 const output = document.getElementById('output');
 const message = document.getElementById('message');
@@ -8,7 +8,7 @@ const roomMessage = document.querySelector('.room-message');
 const users = document.querySelector('.users');
 
 //Socket server URL
-const socket = io('https://morning-sands-95823.herokuapp.com:8000');
+const socket = io('localhost:8000');
 
 //Fetch URL Params from URL
 const queryString = window.location.search;

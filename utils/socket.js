@@ -1,5 +1,4 @@
 const {getUsers, users} = require('./getUsers');
-
 //Socket connection
 function socket(io) {
     io.on('connection', (socket) => {
@@ -33,7 +32,7 @@ function socket(io) {
     
         //Broadcasting the user who is typing
         socket.on('typing', (data) => {
-            socket.broadcast.to(data.roomname).emit('typing', data.username)
+            socket.broadcast.to(data.roomname).emit('typing', data.username);
         })
     
         //Remove user from memory when they disconnect
